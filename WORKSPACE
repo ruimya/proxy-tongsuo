@@ -13,7 +13,7 @@ http_archive(
 new_local_repository(
     name = "openssl_shared",
     build_file = "openssl_host_shared.BUILD",
-    path = "/usr/lib/x86_64-linux-gnu",
+    path = "/opt/babassl/lib",
 )
 
 local_repository(
@@ -25,7 +25,7 @@ local_repository(
     name = "envoy",
     path = "envoy",
     repo_mapping = {
-        "@boringssl": "@openssl",
+        "@boringssl": "@openssl_shared",
     },
 )
 
