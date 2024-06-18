@@ -13,7 +13,7 @@ http_archive(
 new_local_repository(
     name = "openssl_shared",
     build_file = "openssl_host_shared.BUILD",
-    path = "/opt/babassl",
+    path = "/opt/tongsuo",
 )
 
 local_repository(
